@@ -12,8 +12,8 @@ jobs:
     steps:
         - uses: actions/checkout@v2   # チェックアウトアクション（https://github.com/actions/checkout）
         - name: FTP-Deploy-Action
-            uses: SamKirkland/FTP-Deploy-Action@4.2.0   # FTPアップロードアクション（https://github.com/SamKirkland/FTP-Deploy-Action）
-            with:
+          uses: SamKirkland/FTP-Deploy-Action@4.1.0
+          with:
                 server: ${{ secrets.PROD_SERVER }}        # FTPのサーバーアドレス
                 username: ${{ secrets.PROD_USERNAME }}    # FTPのユーザー名名
                 password: ${{ secrets.PROD_PASSWORD }}    # FTPのパスワード
